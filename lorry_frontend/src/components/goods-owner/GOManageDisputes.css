@@ -325,6 +325,6 @@
   /* padding: 8px; */
   /* border-radius: 4px; */
   /* background-color: black;
-  color: yellow; */
+  color: var(--primary-text); */
   border: 1px solid yellow;
 }
