@@ -79,7 +79,7 @@
 }
 
 .DL-loading {
-  color: yellow;
+  color: var(--primary-text);
   text-align: center;
   padding: 20px;
 }

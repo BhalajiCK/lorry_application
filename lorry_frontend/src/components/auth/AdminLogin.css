@@ -29,7 +29,7 @@
   }
   
   /* .AL-admin-login-box h1 {
-    color: yellow;
+    color: var(--primary-text);
     text-align: center;
     margin-bottom: 30px;
   } */

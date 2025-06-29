@@ -22,8 +22,8 @@
 }
 
 /* .admin-dashboard .logout-button {
-  background-color: yellow;
-  color: black;
+  background-color: var(--dashboard-bg);
+  color: var(--primary-text);
   border: none;
   padding: 8px 16px;
   border-radius: 5px;

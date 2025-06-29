@@ -25,7 +25,7 @@
 
 .GOD-owner-dashboard .GOD-logout-button {
   background-color: black;
-  color: yellow;
+  color: var(--primary-text);
   border: none;
   padding: 8px 16px;
   border-radius: 5px;
