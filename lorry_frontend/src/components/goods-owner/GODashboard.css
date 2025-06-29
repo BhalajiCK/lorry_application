@@ -1,6 +1,6 @@
 /* src/pages/goods-owner/Dashboard.css */
 .GOD-owner-dashboard {
-  /* background-color: yellow; */
+  /* background-color: var(--primary-text); */
   color: var(--primary-text);
   max-width: 1200px;
   margin: 0 auto;

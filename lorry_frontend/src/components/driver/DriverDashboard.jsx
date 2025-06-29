@@ -1,5 +1,4 @@
-// src/pages/driver/Dashboard.js
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate, useLocation, useSearchParams } from 'react-router-dom';
 import './DriverDashboard.css';
 import AvailableLoads from './AvailableLoads';

@@ -1,5 +1,5 @@
 // src/components/admin/AdminProfile.js
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './AdminProfile.css';
 import { fetchAdminProfile, updateAdminProfile } from '../../services/adminService';

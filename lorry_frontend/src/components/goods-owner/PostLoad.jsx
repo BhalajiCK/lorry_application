@@ -1,5 +1,4 @@
-// src/components/goods-owner/PostLoad.js
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './PostLoad.css';
 import { postNewLoad } from '../../services/goodsOwnerService';
 

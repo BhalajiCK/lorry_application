@@ -1,5 +1,4 @@
-// src/components/driver/ManageDisputes.js
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './DriverManageDisputes.css';
 import { fetchDriverDisputes, createDriverDispute } from '../../services/driverService';

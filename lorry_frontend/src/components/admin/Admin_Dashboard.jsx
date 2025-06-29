@@ -1,5 +1,5 @@
 // src/pages/admin/Dashboard.js
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate, useLocation, useSearchParams } from 'react-router-dom';
 import './Admin_Dashboard.css';
 import UserManagement from './UserManagement';

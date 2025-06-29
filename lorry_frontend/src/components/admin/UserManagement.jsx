@@ -1,5 +1,5 @@
 // src/components/admin/UserManagement.js
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './UserManagement.css';
 import { fetchUsers, deleteUser } from '../../services/adminService';
 

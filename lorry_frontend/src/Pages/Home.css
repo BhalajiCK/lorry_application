@@ -122,6 +122,14 @@ h1 {
   gap: 20px;
 }
 
+.section-title {
+  color: var(--primary-text);
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 40px 0 20px 0;
+  letter-spacing: 0.5px;
+}
+
 .feature-card {
   background: var(--card-bg);
   border: 1px solid var(--border-color);
@@ -153,14 +161,14 @@ h1 {
   border-bottom: 1px solid var(--border-color);
 }
 
-.stat-item h4 {
+.stat-item h3 {
   font-size: 2.5rem;
-  color: var(--tab-text);
+  color: var(--primary-text);
   margin-bottom: 10px;
 }
 
 .stat-item p {
-  color: var(--input-placeholder);
+  color: var(--primary-text);
   font-size: 0.9rem;
 }
 
@@ -172,6 +180,7 @@ h1 {
 .cta-section h2 {
   font-size: 2rem;
   margin-bottom: 20px;
+  color: var(--primary-text);
 }
 
 .cta-section p {
@@ -198,6 +207,18 @@ h1 {
   background: var(--button-bg);
   color: var(--button-text);
   border: none;
+}
+
+.cta-button.secondary {
+  background: transparent;
+  color: var(--tab-text);
+  border: 2px solid var(--tab-text);
+}
+
+.cta-button.secondary:hover {
+  background: var(--hover-bg);
+  color: var(--button-bg);
+  transform: scale(1.05);
 }
 
 .cta-button.primary:hover {

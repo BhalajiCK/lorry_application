@@ -1,5 +1,5 @@
 // src/components/admin/DisputeResolution.js
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './DisputeResolution.css';
 import { fetchDisputes, resolveDispute } from '../../services/adminService';
 

@@ -1,5 +1,4 @@
-// src/components/driver/AvailableLoads.js
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './AvailableLoads.css';
 import { fetchAvailableLoads, placeBid } from '../../services/driverService';
 import { fetchOwnerPublicProfile } from '../../services/goodsOwnerService';

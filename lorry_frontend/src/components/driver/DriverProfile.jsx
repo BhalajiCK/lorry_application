@@ -1,5 +1,4 @@
-// src/components/driver/DriverProfile.js
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './DriverProfile.css';
 import { fetchDriverProfile } from '../../services/driverService'; // Removed saveDriverProfile as it's not defined here

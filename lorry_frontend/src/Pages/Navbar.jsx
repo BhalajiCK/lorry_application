@@ -1,9 +1,9 @@
 import { useAuth } from '../context/AuthContext';
 import { NavLink, Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
-import React, { useState, useContext, useEffect } from 'react';
+import  { useState,  useEffect } from 'react';
 import './Navbar.css'; // Add this import
-import { ArrowRightOutlined, MoonOutlined, SunOutlined, MoonFilled, SunFilled, MenuOutlined, CloseOutlined } from '@ant-design/icons';
+import { AiOutlineArrowRight, AiOutlineMenu, AiOutlineClose, AiFillMoon, AiFillSun } from 'react-icons/ai';
 
 
 const Navbar = () => {
@@ -48,7 +48,7 @@ const Navbar = () => {
                     userType === 'admin' ? '/admin' : '/'
               }>
                 <span className="NAV-user-type-indicator">
-                  <ArrowRightOutlined />
+                  <AiOutlineArrowRight />
                   {userType === 'driver' ? ' Driver Dashboard' :
                     userType === 'goods_owner' ? ' Goods Owner' :
                       userType === 'admin' ? ' Admin Dashboard' : ''}
@@ -61,15 +61,19 @@ const Navbar = () => {
             {isAuthenticated && userType ? (
               <>
                 <span className="NAV-username-desktop">Welcome, {username}</span>
-                <button className="NAV-theme-toggle" onClick={toggleTheme}>
-                  {theme === 'light' ? <MoonFilled /> : <SunFilled />}
+                <button className="NAV-theme-toggle" onClick={toggleTheme} aria-label="Toggle theme">
+                  {theme === 'light' ? <AiFillMoon /> : <AiFillSun />}
                 </button>
                 <button className="NAV-logout-btn" onClick={handleLogout}>Logout</button>
               </>
             ) : (
               <div className="NAV-auth-links">
                 <button className="NAV-theme-toggle" onClick={toggleTheme}>
-                  {theme === 'light' ? <MoonFilled /> : <SunFilled />}
+                  {theme === 'light' ? (
+                    // Moon SVG
+                    <AiFillMoon />) : (
+                    // Sun SVG
+                    <AiFillSun />)}
                 </button>
                 <Link className="NAV-nav-link" to="/login">Login</Link>
                 <div className="NAV-register-dropdown">
@@ -89,8 +93,8 @@ const Navbar = () => {
             {isAuthenticated && userType && (
               <span className="NAV-username-next-btn">Welcome, {username}</span>
             )}
-            <button className="NAV-menu-btn" onClick={() => setShowUserInfoDropdown(!showUserInfoDropdown)}>
-              {showUserInfoDropdown ? <CloseOutlined /> : <MenuOutlined />}
+            <button className="NAV-menu-btn" onClick={() => setShowUserInfoDropdown(!showUserInfoDropdown)} aria-label={showUserInfoDropdown ? "Close menu" : "Open menu"}>
+              {showUserInfoDropdown ? <AiOutlineClose /> : <AiOutlineMenu />}
             </button>
             {/* Side drawer overlay */}
             <div className={`NAV-user-info-drawer-overlay${showUserInfoDropdown ? ' open' : ''}`} onClick={() => setShowUserInfoDropdown(false)} />
@@ -99,15 +103,20 @@ const Navbar = () => {
               {isAuthenticated && userType ? (
                 <>
                   <span className="NAV-username-mobile">Welcome, {username}</span>
-                  <button className="NAV-theme-toggle" onClick={toggleTheme}>
-                    {theme === 'light' ? <MoonFilled /> : <SunFilled />}
+                  <button className="NAV-theme-toggle" onClick={toggleTheme} aria-label="Toggle theme">
+                    {theme === 'light' ? <AiFillMoon /> : <AiFillSun />}
                   </button>
                   <button className="NAV-logout-btn" onClick={handleLogout}>Logout</button>
                 </>
               ) : (
                 <div className="NAV-auth-links">
                   <button className="NAV-theme-toggle" onClick={toggleTheme}>
-                    {theme === 'light' ? <MoonFilled /> : <SunFilled />}
+                    {theme === 'light' ? (
+                      // Moon SVG
+                      <AiFillMoon />
+                    ) : (
+                      // Sun SVG
+                      <AiFillSun />)}
                   </button>
                   <Link className="NAV-nav-link" to="/login">Login</Link>
                   <div className="NAV-register-dropdown">

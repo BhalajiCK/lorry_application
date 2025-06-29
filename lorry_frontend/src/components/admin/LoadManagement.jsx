@@ -1,5 +1,5 @@
 // src/components/admin/LoadManagement.js
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './LoadManagement.css';
 import { fetchAllLoads, updateLoadStatus } from '../../services/adminService';
 

@@ -1,5 +1,4 @@
-// src/components/goods-owner/OwnerProfile.js
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './OwnerProfile.css';
 import { fetchOwnerProfile, saveOwnerProfile } from '../../services/goodsOwnerService';

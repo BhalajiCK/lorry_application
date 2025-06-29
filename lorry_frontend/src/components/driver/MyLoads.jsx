@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './MyLoadsD.css';
 import { fetchDriverMyLoads, updateLoadStatus } from '../../services/driverService';
 import { useAuth } from '../../context/AuthContext';

@@ -10,7 +10,6 @@ const Footer = () => {
           <div className="footer-section">
             <h3>Lorry Link</h3>
             <p>Connecting drivers and goods owners efficiently</p>
-            <p><a href="/login-old">Login_Old</a></p>
           </div>
           <div className="footer-section">
             <h4>Quick Links</h4>

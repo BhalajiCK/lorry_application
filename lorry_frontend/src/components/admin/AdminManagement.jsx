@@ -1,9 +1,8 @@
 // src/components/admin/AdminManagement.js
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './AdminManagement.css';
 import { fetchAdmins, deleteAdmin } from '../../services/adminService';
-import AddAdmin from './AddAdmin'; // Assuming this component is used elsewhere or via routing
 import EditModal from './EditModal'; // Assuming this is a functional modal component
 import { useAuth } from '../../context/AuthContext';
 

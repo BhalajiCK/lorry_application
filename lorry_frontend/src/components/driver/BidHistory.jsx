@@ -1,5 +1,4 @@
-// src/components/driver/BidHistory.js
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './BidHistory.css';
 import { fetchDriverBids } from '../../services/driverService';
 import { useAuth } from '../../context/AuthContext'; // Assuming useAuth provides user info

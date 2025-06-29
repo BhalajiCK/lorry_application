@@ -1,5 +1,4 @@
-// src/components/goods-owner/MyLoads.js
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './GOMyLoads.css';
 import { fetchMyLoads, fetchBidsForLoad, hireDriverForLoad} from '../../services/goodsOwnerService';
 

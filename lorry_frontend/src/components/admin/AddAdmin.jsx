@@ -1,7 +1,5 @@
-// src/components/admin/AddAdmin.js
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Select, MenuItem, FormControl, InputLabel } from '@mui/material';
 import './AddAdmin.css';
 import { addNewAdmin } from '../../services/adminService';
 
@@ -118,17 +116,19 @@ const AddAdmin = () => {
         </div>
 
         <div className="AA-form-group">
-        <label>Role</label>
+          <label>Role</label>
           <div className="select-container">
-            <Select
-              label="role"
+            <select
+              name="role"
               value={role}
               onChange={(e) => setRole(e.target.value)}
+              className={errors.role ? 'error' : ''}
             >
-              <MenuItem value="superadmin">Super Admin</MenuItem>
-              <MenuItem value="admin">Admin</MenuItem>
-              <MenuItem value="manager">Manager</MenuItem>
-            </Select>
+              <option value="">Select Role</option>
+              <option value="superadmin">Super Admin</option>
+              <option value="admin">Admin</option>
+              <option value="manager">Manager</option>
+            </select>
           </div>
           {errors.role && <span className="AA-error-message">{errors.role}</span>}
         </div>

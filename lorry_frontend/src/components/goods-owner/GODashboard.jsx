@@ -1,5 +1,4 @@
-// src/pages/goods-owner/Dashboard.js
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate, useLocation, useSearchParams } from 'react-router-dom';
 import './GODashboard.css';
 import PostLoad from './PostLoad';

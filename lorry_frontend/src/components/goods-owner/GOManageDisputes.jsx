@@ -1,5 +1,4 @@
-// src/components/goods-owner/ManageDisputes.js
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './GOManageDisputes.css';
 import { fetchOwnerDisputes, createOwnerDispute } from '../../services/goodsOwnerService';

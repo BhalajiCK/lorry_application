@@ -1,5 +1,4 @@
-// src/components/admin/ChangePassword.js
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './DChangePassword.css';
 import { changeDriverPassword } from '../../services/driverService';
